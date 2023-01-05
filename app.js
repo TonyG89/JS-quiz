@@ -127,7 +127,7 @@ const tryAgain = () => {
     window.location.reload();
 }
 //получение вопросов с файла
-sendRequest('/questions.json')
+sendRequest('./questions.json')
     .then(q => {
         numberOfAllQuestions.innerHTML = q.length;
 
